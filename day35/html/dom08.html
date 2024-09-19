@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>querySelector</title>
+</head>
+<body>
+  <div class="div" id="div-p">
+    <p>div태그 안의 p태그입니다</p>
+    <span>div태그 안의 span태그입니다</span>
+  </div>
+  <div class="div">
+    <p>div태그 안의 p태그입니다</p>
+    <span>div태그 안의 span태그입니다</span>
+  </div>
+</body>
+<script>
+  const result = document.querySelector("#div-p p").innerText;
+  console.log(result);
+  const result2 = document.querySelectorAll(".div span");
+  console.log(result2);
+</script>
+</html>

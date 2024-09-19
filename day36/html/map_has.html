@@ -1,0 +1,35 @@
+<!-- 15번 : map -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map</title>
+</head>
+<body>
+  <p id="result"></p>
+</body>
+<script>
+  const fruits = new Map([['사과', 10], ['귤', 50], ['포도', 30], ['복숭아', 20]]);
+  console.log(fruits);
+  //오렌지를 추가 후 html화면에 과일명과 개수를 출력하기
+  fruits.set('오렌지', 5);
+  console.log(fruits);
+
+  //HTML 화면에 과일명과 개수 출력하기
+  //(key, value)를 같이나오게 하는 메소드 entries()
+  // let resultText = "";
+  // for(let [key, value] of fruits.entries()){
+  //   resultText += `<h1>${key} : ${value}개</h1><br>`;
+  // }
+  // document.getElementById('result').innerHTML = resultText;
+  
+  let resultText2 = "";
+  fruits.forEach(function (value, key){
+    resultText2 += `<h1>${key} : ${value}</h1><br>`;
+  });
+  document.getElementById("result").innerHTML = resultText2;
+
+</script>
+
+</html>

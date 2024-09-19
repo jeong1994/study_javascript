@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클래스 이름을 이용한 선택</title>
+</head>
+<body>
+  <!-- 5개의 li태그를 만들고
+   홀수번째 클래스명 : odd item
+   짝수번째 클래스명 : even item
+   컨텐츠 : 1번째 .... 5번째
+   짝수는 파란색, 홀수는 빨간색 글씨로 출력되도록 만들기 -->
+  <div>
+    <h1>클래스 이름을 이용한 선택 실습</h1>
+    <ul>
+      <li class="odd item">1번째</li>
+      <li class="even item">2번째</li>
+      <li class="odd item">3번째</li>
+      <li class="even item">4번째</li>
+      <li class="odd item">5번째</li>
+    </ul>
+  </div>
+</body>
+<script>
+  const items = document.getElementsByClassName("item");
+
+  //getElementsByClassName은 HTTPCollection이기 때문에 
+  //배열로 변환해야 forEach메소드를 사용할수있다
+  // const items = document.querySelectorAll(".item");
+  //querySelectorAll은 forEach메소드를 바로 사용할 수 있다  
+  // console.log(items);
+  Array.from(items).forEach((item, index) => {
+    if(index % 2 === 0){
+      item.style.color = "blue";
+    }else{
+      item.style.color="red";
+    }
+  });
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>write 실습</title>
+</head>
+<body>
+  <!-- 
+  실습(h1태그)
+  hr태그
+  나의 이름은 000이고 나이는 0살 이고, 만나이는 0살 입니다.(h2태그)
+  javascript만 사용하고, 변수를 이용하여 이름과 나이만 저장한 뒤
+  만나이가 올수 있도록 작성할 것 -->
+</body>
+<script>
+  let name = prompt("이름을 입력하세요");
+  let age = 20;
+  
+  with(document){
+    
+    write("<h1>실습</h1>");
+    write(`<h2>나의 이름은 ${name}이고 나이는 ${age}이고, 만나이는 ${age-1} 입니다.</h2>`);
+  }
+</script>
+</html>

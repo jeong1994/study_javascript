@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>set has()메소드</title>
+</head>
+<body>
+  <p id="result"></p>
+</body>
+<script>
+  const set1 = new Set(['빨','주','노','초','파','남','보']);
+
+  //has() 메소드는 Set 객체에 특정 값이 포함되어 있는지 확인하는 메소드
+  //포함은 true, 없으면 false
+  let text1 = "";
+  text1 += set1.has('노') + "<br>";
+  text1 += set1.has('분홍') + "<br>";
+  document.getElementById('result').innerHTML = text1;
+
+  let text2 = "";
+  const data = new Set(["안녕", "hello"]);
+
+  for(let i of data){
+    console.log(i);
+    text2 += i + "<br>";
+  }
+
+  document.getElementById("result").innerHTML = text2;
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!-- 입력대화상자 prompt() -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>입력대화상자 prompt()</title>
+</head>
+  <script>
+    var name = prompt("이름을 입력하세요"); //prompt()는 alert()처럼 브라우저에 창을 띄우는데
+                                  //버튼은 확인,취소 버튼이 있고
+                                  //입력 가능한 텍스트 박스가 있다
+                                  //변수에 담을 수 있어서 박스에 입력한 텍스트가 변수에 담긴다
+    document.write("<h1>" + name + "</h1>"); //브라우저에서 prompt 창에 입력받은 값을 name에 담아 
+                                  //h1태그로 작성해 줄 수 있다 document.write는 작성가능한 메소드
+    console.log(name);  //콘솔에도 저장된 name이 출력된다
+  </script>
+<body>
+  
+</body>
+</html>

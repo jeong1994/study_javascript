@@ -1,0 +1,46 @@
+<!-- 3번 : jquery 전체동의 -->
+<!-- day37 checkbox 의 전체동의와 비교해서 확인할것 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jquery 전체동의</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" 
+   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="       
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <form action="" method="" name="myForm">
+    <div>
+      <label>전체동의
+        <input type="checkbox" name="check" class="all">
+      </label>
+    </div>
+    <div>
+      <label>서비스 이용약관 동의
+        <input type="checkbox" name="check" class="check1">
+      </label>
+    </div>
+    <div>
+      <label>개인정보 이용약관동의
+        <input type="checkbox" name="check" class="check1">
+      </label>
+    </div>
+    <div>
+      <label>광고 수신 동의
+        <input type="checkbox" name="check" class="check1">
+      </label>
+    </div>
+  </form>
+</body>
+<script>
+  $(".all").on('click', (e) => {
+    $(".check1").prop("checked", e.target.checked);
+  });
+
+  $(".check1").on("click", (e) => {
+    $(".all").prop("checked", $(".check1").filter(":checked").length  === 3);
+  });
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jquery02</title>
+</head>
+<body>
+  <div>
+    <div><input type="text" value="1" class="number"></div>
+    <div><input type="text" value="2" class="number"></div>
+    <div><input type="text" value="3" class="number"></div>
+    <div>
+      <button onclick="change()">변경(JS)</button>
+      <button onclick="$('.number').css('border-color','blue')">변경(jquery)</button>
+    </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" 
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="       
+crossorigin="anonymous"></script>
+<script>
+  function change(){
+    const inputs = document.querySelectorAll("input.number");
+    inputs.forEach((input) => {
+      input.style.borderColor = "red";
+    });
+  }
+</script>
+</html>

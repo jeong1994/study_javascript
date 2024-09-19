@@ -1,0 +1,41 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 80%;
+  margin: 20px auto;
+}
+
+h1{
+  text-align: center;
+}
+
+#content{
+  border: 1px solid gray;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#pagination-container{
+  text-align: center;
+}
+
+#pagination{
+  display: inline-block;
+  padding : 0 ;
+}
+
+#pagination li{
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  color: blue;
+}
+
+#pagination li.active{
+  font-weight: bold;
+  color: red;
+}

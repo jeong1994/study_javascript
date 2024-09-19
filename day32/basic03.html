@@ -1,0 +1,21 @@
+<!-- confirm() 확인대화상자 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>확인대화상자 confirm</title>
+</head>
+<body>
+  
+</body>
+<!-- 확인, 취소 버튼 모두 있음 -->
+  <script>
+    if(confirm("확인을 누르시겠습니까?")){ //alert처럼 메시지를 출력하는 창을 띄우지만 확인,취소 버튼이 있다
+                                    //확인버튼을 누르면 true를 반환하고 취소버튼은 false를 반환한다
+      alert("다음으로 진행");
+    }else{
+      alert("취소");
+    }
+  </script>
+</html>

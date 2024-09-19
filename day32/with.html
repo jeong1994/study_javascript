@@ -1,0 +1,20 @@
+<!-- with -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+  with(document){ //with()에 작성된 값을 참조한다는 뜻
+    //블럭 안에서 with안에서 document.~ 명령을 사용할 때 document 생략하고 .뒤에 명령()만 작성하여 사용할 수 있다
+    console.log(`콘솔에 출력!`);
+    write("<h1>안녕! 자바스크립트 공부중이야</h1>");
+    write(1 + 1 + "번이야!");
+    write("<span>자바스크립트 1일차</span>");
+  }
+</script>
+</html>
